@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+
+        String name = "최장빈";
+
+        name = keyboard.nextLine();
+
+
+
+        System.out.println("입력 받은 이름 : " + name);
+    }
+}
