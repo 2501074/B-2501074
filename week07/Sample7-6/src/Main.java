@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
+// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num;
+        int result;
+
+        System.out.print("정수 입력 (1~10000) : ");
+        num = input.nextInt();
+
+        if(!(num >= 1  && num <= 9999)) {
+            System.err.println("ERROR : 입력 범위는 1 ~ 10000입니다");
+        } else {
+            if (num >= 1000) {
+                result = 9999 - num + 1;
+            } else if (num >= 100) {
+                result = 999 - num + 1;
+            }else if (num >= 10){
+                result = 99 - num + 1;
+            }else{
+                result = 9 - num + 1;
+            }
+            System.out.printf("입력한 정수 %,d는 10의 보수는 %,d 입니다.",num,result);
+        }
+
+    }
+}
