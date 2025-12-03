@@ -11,7 +11,7 @@ public class Main {
                 break;
             }
         }
-
+/*
 
         while (chicken <= 37) {
             int dog = 37 - chicken;
@@ -33,6 +33,6 @@ public class Main {
             }
             chicken++;
         } while (chicken <= 37);
-
+*/
     }
 }
